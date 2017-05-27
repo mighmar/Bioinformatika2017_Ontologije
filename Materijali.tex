@@ -1,0 +1,39 @@
+\section{Materijali}
+
+U poslednjoj deceniji predložen, definisan i objavljen je veliki broj ontologija iz biomedicine.
+Neke od najznačajnijih su Chemical Entities of Biological Interest (ChEBI), Gene Ontology (GO), 
+i ontologiju za Biological Pathways Exchange (BioPAX). \par
+ ChEBI sadrži informacije o malim molekulima i molekularnim entitetima 
+koji se javljaju u metaboličkim procesima, kao laboratorjiski reagensi, farmaceutski lekovi i subatmske čestice.
+ Kompleksni markomolekuli, poput proteina, obično nisu uključeni. Ideja je da ChEBI bude opširan rečnik biohemijskih entiteta, njihovih
+za mašine čitljivih strukturnih informacija i primena.
+
+\subsection{Pronalaženje i pristup ontologijama}
+
+Internet strane omogućavaju pronalaženje i pristup ontologijama.\\*
+ChEBI i GO su deo Biomedical Ontologies Foundry\footnote{OBO,\url{www.obofoundry.org}}, kolektiva za razvoj ontologija čiji je cilj standardizacija razvoja biomedicinskih ontologija i njihovo povezivanje. 
+Takođe OBO sadrži veliki broj prihvaćenih ontologija i ontologija kandidata.
+BioPortal\footnote{ \url{http://bioportal.bioontology.org/}} i EMBL-EBI Ontology Lookup Service\footnote{ \url{www.ebi.ac.uk/ontology-lookup/}}
+su su neke od internet strana koje omogućavaju pretraživanje ontologija.
+
+\subsection{Enkodiranje ontologija}
+
+Postoji veli broj alata i softverskih rešenja koja omogućavaju deinisanje novih i manjanje postojećih onotologija, kao i 
+enkodiranje i modifkovanje podataka u skladu sa postojećom definicijom ontologije.
+Najčešći način za definisanje ontologija je pomoću Web Ontology Language (OWL), standarda World Wide Web Consortium (W3C).
+Ovako definisana ontologija može biti enkodirana u XML/RDF format. RDF je format koji definise trojke oblika subjekat-predikat-objekat
+za formiranje izraza. \par
+Postoje 3 verzije OWL: OWL Full, OWL DL i OWL Lite.
+OWL Lite pokriva osnove modeliranja podataka i ova verzija je odogvarajuća u većini slučajeva.
+OWL DL je nadogradnja OWL Lite koja uvodi opisnu logiku i mogućnost zaključivanja. Ova verzija je nophodna za logičko zaključivanje.
+OWL Full podržava kompletnu OWL sintaksu i omogćava proširivanje i nadogradnju postojećeg OWL rečnika.
+
+\subsection{Editovanje ontologija}
+
+Prot\'eg\'e je veoma popularan softverski alat koji omogućava editovanje ontologija kao i unos podataka u ontologije.
+Alat se koristi i u akademiji i u industriji.
+Otoverenog je koda i dostupan na svim platformama.
+Takođe postoji i internet verzija alata, koja može biti preuzeta i postavljena na lokalni server 
+(ova verzija je dostupa svima na internet strani Stanforda webprotege.stanford.edu). \par
+Dostupni su i razni alata za specifične ontologije. ClueGO je dodatak za Cytoscape(alat za vizualizaciju)
+ koji omogućava vizualizaciju kompleksnih odnosa u ontologiji gena (GO).
