@@ -1,0 +1,144 @@
+\documentclass[xetex,mathserif,serif]{beamer}
+
+\usepackage[export]{adjustbox}
+\usepackage{listings}
+\usepackage{color}
+
+\usetheme{Darmstadt}
+
+\definecolor{UBCblue}{rgb}{0.29412, 0.2745, 0.53334} % UBC Blue (primary)
+
+\usecolortheme[named=UBCblue]{structure}
+
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{csquotes}
+
+\title {Ontologije}
+\subtitle{Seminarski rad u okviru kursa\\Bioinformatika}
+\author[Crnobrnja, Mićić] % (optional, for multiple authors)
+{Marko Crnobrnja i Marko Mićić}
+\institute% (optional)
+{
+  Matematički fakultet\\
+  Univerzitet u beogradu
+}
+\date % (optional)
+
+
+
+\begin{document}
+  \frame{\titlepage}
+  
+  \begin{frame}
+    \frametitle{Uvod}
+		\begin{center}		
+		\begin{itemize}
+			\item Velika količina podataka
+			\item Potreban je način za usaglašeno upravljanje ovim znanjem
+		\end{itemize}
+			\begin{displayquote}
+				Specifikacija reprezentativnog vokabulara za deljeni domen diskursa-definicije klasa, relacija, funkcija i drugih obejkata-zove se ontologija.
+			\end{displayquote}			
+		\begin{itemize}
+			\item Definišu klase, objekte i relacije među njima
+			\item Glavni ciljevi
+				\begin{itemize}
+			 		\item Formalizacija strukture specifičnih informacija o domenu
+			 		\item Razdvajanje znanja od strukturi podataka od samih podataka
+			 		\item Omogućivanje ponovnog korišćenja i deljenje strukture i znanja
+			 	\end{itemize}
+		\end{itemize}
+	\end{center}
+  \end{frame}  
+  \begin{frame}
+    \frametitle{Materijali}
+		\begin{center}		
+		\begin{itemize}
+			\item U poslednjoj deceniji predložen, definisan i objavljen veliki broj ontologija iz biomedicine
+				\begin{itemize}
+					\item Chemical Entities of Biological Interest (ChEBI)
+					\item Gene Ontology (GO)
+					\item Biological Pathways Exchange (BioPAX)
+				\end{itemize}
+			\item Biomedical Ontologies Foundry
+			\item Najčešći definisanja pomoću Web Ontology Language (OWL) standarda
+				\begin{itemize}
+					\item OWL Full
+					\item OWL DL
+					\item OWL Lite
+					\item Može se enkodirati u XML/RDF format
+				\end{itemize}
+			\item Razni alati
+				\begin{itemize}
+					\item Protégé
+					\item ClueGO
+				\end{itemize}
+		\end{itemize}
+	\end{center}
+  \end{frame}  
+  \begin{frame}
+    \frametitle{Metodi}
+    	\framesubtitle{Gene Ontology}	
+		\begin{center}		
+		\begin{itemize}
+			\item Nastala iz saradnje baza genomskih podataka
+				\begin{itemize}
+					\item FlyBase
+					\item Mouse Genome Informatics
+					\item Saccharomyces Genome Database
+				\end{itemize}
+			\item Mnoge DNK sekvence kao i njihove funkcije očuvane medu različitim vrstama
+			\item Biomedical Ontologies Foundry
+			\item Tri odvojene ontologije
+				\begin{itemize}
+					\item Bioloških procesa
+					\item Molekularnih funkcija
+					\item Ćelijskih komponenti
+				\end{itemize}
+			\item AmiGO
+			\item Go.db, RamiGO
+			\item Analiza zastupljenosti
+		\end{itemize}
+	\end{center}
+  \end{frame}  
+  \begin{frame}
+    \frametitle{Metodi}
+    	\framesubtitle{Biological Pathways Exchange}	
+		\begin{center}		
+		\begin{itemize}
+			\item Modelira biološke (metaboličke, genetske, signalne) puteve
+			\item Klase
+				\begin{itemize}
+					\item fizički entiteti
+					\item interakcije
+					\item putevi
+				\end{itemize}
+			\item Veliki broj različitih baza
+				\begin{itemize}
+					\item Kyoto Encyclopedia of Genes and Genomes
+					\item Reactome
+					\item WikiPathways
+					\item Pathway Interaction Database
+					\item \dots
+				\end{itemize}
+			\item Takođe postoje alati za R
+				\begin{itemize}
+					\item PaxTools
+					\item rBioxParser
+				\end{itemize}
+		\end{itemize}
+	\end{center}
+  \end{frame}  
+  \begin{frame}
+    \frametitle{Zaključak}
+		\begin{center}		
+		\begin{itemize}
+			\item Neophodne za koordinaciju više izvora podataka
+			\item Opšteprihvaćene u biomedicini
+			\item Moćan način enkodiranja znanja
+			\item Omogućavaju nove pristupe problemima
+		\end{itemize}
+	\end{center}
+  \end{frame} 
+\end{document}
